@@ -1,0 +1,54 @@
+.colorblock {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.red {
+    background-color: red;
+    animation-name: red-green-blue;
+}
+
+.green {
+    background-color: green;
+    animation-name: green-blue-red;
+}
+
+.blue {
+    background-color: blue;
+    animation-name: blue-red-green;
+}
+
+@keyframes red-green-blue{
+    0% { background-color: red;}
+    33% { background-color: green;}
+    66% { background-color: blue;}
+    100% { background-color: red;}
+}
+
+@keyframes green-blue-red{
+    0% { background-color: green;}
+    33% { background-color: blue;}
+    66% { background-color: red;}
+    100% { background-color: green;}
+}
+
+@keyframes blue-red-green{
+    0% { background-color: blue;}
+    33% { background-color: red;}
+    66% { background-color: green;}
+    100% { background-color: blue;}
+}
+
+.loader {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    left: 50%;
+    margin-left: -100px;
+    color: white;
+    display: none;
+}
